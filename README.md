@@ -1,2 +1,2 @@
 # github.io
-My websit :)
+My website :)
