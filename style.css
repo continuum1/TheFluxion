@@ -20,18 +20,13 @@ hr {
 }
 
 .title {
-    font-size: 35px;
-    text-align: left;
-    padding: 0px;
-}
-
-#test {
-    position: absolute;
-}
-
-#test2 {
     position: relative;
-    width: 300px;
-    height 23px;
-    padding-bottom: 40px;
+    font-size: 35px;
+    padding: 1px;
+    height: 35px;
+    width: fit-content;
+    text-align: left;
+    border-right-color: #ffffff;
+    border-right-width: 2px;
+    border-right-style: solid;
 }
