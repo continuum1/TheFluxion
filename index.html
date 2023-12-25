@@ -10,10 +10,13 @@
   <body>
     <p class="title">Home</p>
     <hr size="2px"/>
-    <iframe src="The_Central_Fluxion/page.html">The Central Fluxion</iframe>
+    <iframe id="The_Central_Fluxion" srcdoc="The_Central_Fluxion" src="The_Central_Fluxion/slate.html">The_Central_Fluxion</iframe>
   </body>
 
-  <script src="arranger.js">
-    
+  <script src="index.js"></script>
+  <script id="test">
+    e = document.getElementById("The_Central_Fluxion");
+    json = fetch("http://continuum1.github.io/TheFluxion/" + e.srcdoc + "/slate.json");
+    console.log(json);
   </script>
 </html>
