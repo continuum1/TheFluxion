@@ -1,6 +1,6 @@
 {
-    "title": "The Central Fluxion",
-    "type": "text",
+    "title": "Flux",
+    "type": "narrative",
 
     "dimensions": {
         "x": 5,
@@ -10,7 +10,7 @@
     },
 
     "date": {
-        "made": "12-20-23",
+        "made": "",
         "version-history": []
     }
 }
