@@ -2,6 +2,7 @@ const page = "https://continuum1.github.io/TheFluxion/";
 
 async function slateFetcher(slate) {
     slatesToFetch = await fetch(page + "slates.json");
+    console.log(slatesToFetch);
     slates = [];
 
     for(f = 0; f < slatesToFetch.slates.length; f++) {
@@ -44,6 +45,7 @@ function overlap(pos1, pos2, dim1, dim2) {
 }
 
 async function arrange(id, width, height) {
+    slates = [];
     slates = await slateFetcher("The_Central_Fluxion");
 
     for(p = 0; p < slates.length; p++) {
