@@ -12,15 +12,11 @@ async function slateFetcher(slate) {
     return slates;
 }
 
-async function arrange(width, height) {
-    slates = await slateFetcher("The_Central_Fluxion");
-
-    for(p = 0; p < slates.length; p++) {
-        console.log(slates[p]);
-    }
-
-    console.log(width + ", " + height);
-    
+function hasPoint(pos1, pos2, dim2) {
+    return (pos1[0] >= pos2[0] && 
+            pos1[1] >= pos2[1] && 
+            pos1[0] <= (pos2[0] + dim2[0]) && 
+            pos1[1] <= (pos2[1] + dim2[1]));
 }
 
 function overlap(pos1, pos2, dim1, dim2) {
@@ -47,9 +43,13 @@ function overlap(pos1, pos2, dim1, dim2) {
     return 0; //case 10
 }
 
-function hasPoint(pos1, pos2, dim2) {
-    return (pos1[0] >= pos2[0] && 
-            pos1[1] >= pos2[1] && 
-            pos1[0] <= (pos2[0] + dim2[0]) && 
-            pos1[1] <= (pos2[1] + dim2[1]));
+async function arrange(width, height) {
+    slates = await slateFetcher("The_Central_Fluxion");
+
+    for(p = 0; p < slates.length; p++) {
+        console.log(slates[p]);
+    }
+
+    console.log(width + ", " + height);
+    
 }
