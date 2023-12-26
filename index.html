@@ -4,14 +4,14 @@
   <head>
     <meta charset="UTF-8"/>
     <link href="style.css" rel="stylesheet"/>
+    <script src="index.js"></script>
     <title>The Fluxion</title>
   </head>
   
-  <body>
+  <body onload="arrange(document.getElementById('slateSpace').width, document.getElementById('slateSpace').height)">
     <p class="title">Home</p>
     <hr size="2px"/>
-    <iframe style="text-decoration-color: #ffffff;" id="The_Central_Fluxion" src="The_Central_Fluxion/slate.html"></iframe>
+    
+    <div id="slateSpace" class="slateContainer"></div>
   </body>
-
-  <script src="index.js"></script>
 </html>
