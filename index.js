@@ -43,7 +43,7 @@ function overlap(pos1, pos2, dim1, dim2) {
     return 0; //case 10
 }
 
-async function arrange(width, height) {
+async function arrange(id, width, height) {
     slates = await slateFetcher("The_Central_Fluxion");
 
     for(p = 0; p < slates.length; p++) {

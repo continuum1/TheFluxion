@@ -9,7 +9,7 @@
     <title>The Fluxion</title>
   </head>
   
-  <body onload="arrange(document.getElementById('slateSpace').clientWidth, document.getElementById('slateSpace').clientHeight)">
+  <body>
     
     <p class="title">Home</p>
     
@@ -34,6 +34,6 @@
     <script>startTicker("ticker-box", {speed: 7, delay: 750});</script>
     
     <div id="slateSpace" class="slateContainer" width="10px" height="10px"></div>
-    
+    <script>arrange('slateSpace', document.getElementById('slateSpace').clientWidth, document.getElementById('slateSpace').clientHeight)</script>
   </body>
 </html>
