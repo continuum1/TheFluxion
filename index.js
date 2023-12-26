@@ -7,7 +7,7 @@ async function slateFetcher(slate) {
     slates = [];
 
     for(f = 0; f < slatesToFetch.slates.length; f++) {
-        temp = await fetch(path + slatesToFetch.slates[a] + "/slate.json");
+        temp = await fetch(page + slatesToFetch.slates[f] + "/slate.json");
         slates[f] = await temp.json();
     }
 
