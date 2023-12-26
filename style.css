@@ -1,6 +1,25 @@
+/*  Pallete (colors picked from vaporwave 
+ *  ahh sodium vapor lighting pictures from 
+ *  Pintrest)
+ * 
+ *  #F9B302
+ *  #FF9430
+ *  #9CAD00
+ *  #325132
+ *  #1C1210
+ */
+
+:root {
+    --pall-1: #f9b302;
+    --pall-2: #ff9430;
+    --pall-3: #9cad00;
+    --pall-4: #325132;
+    --pall-5: #1c1210;
+}
+
 html {
-    background-color: #100010;
-    color: #b0b0b0;
+    background-color: var(--pall-5);
+    color: var(--pall-3);
 }
 
 body {
@@ -17,17 +36,18 @@ p {
 hr {
     margin: 0px;
     padding: 0px;
-    color: #b0b0b0;
+    color: var(--pall-3);
 }
 
 .title {
     position: relative;
     font-size: 35px;
+    color: var(--pall-1);
     padding: 1px;
     height: 35px;
     width: fit-content;
     text-align: left;
-    border-right-color: #ffffff;
+    border-right-color: var(--pall-3);
     border-right-width: 2px;
     border-right-style: solid;
 }
@@ -35,7 +55,14 @@ hr {
 .newsticker {
     border-style: solid;
     border-width: 2px;
+    border-right: 0px;
+    border-left: 0px;
     font-size: 17px;
 }
 
+.newsticker-content {
+    color: var(--pall-1);
+}
+
 .slateContainer {}
+
