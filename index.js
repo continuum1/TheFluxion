@@ -8,6 +8,8 @@ async function slateFetcher(slate) {
 
 async function arrange(width, height) {
     json = await slateFetcher("The_Central_Fluxion");
+
+    console.log(width + ", " + height);
 }
 
 function overlap(pos1, pos2, dim1, dim2) {

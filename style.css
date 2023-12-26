@@ -1,6 +1,6 @@
 html {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #100010;
+    color: #b0b0b0;
 }
 
 body {
@@ -17,6 +17,7 @@ p {
 hr {
     margin: 0px;
     padding: 0px;
+    color: #b0b0b0;
 }
 
 .title {
@@ -29,6 +30,12 @@ hr {
     border-right-color: #ffffff;
     border-right-width: 2px;
     border-right-style: solid;
+}
+
+.newsticker {
+    border-style: solid;
+    border-width: 2px;
+    font-size: 17px;
 }
 
 .slateContainer {}

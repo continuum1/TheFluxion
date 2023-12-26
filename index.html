@@ -5,13 +5,35 @@
     <meta charset="UTF-8"/>
     <link href="style.css" rel="stylesheet"/>
     <script src="index.js"></script>
+    <script src="newsticker.js"></script>
     <title>The Fluxion</title>
   </head>
   
-  <body onload="arrange(document.getElementById('slateSpace').width, document.getElementById('slateSpace').height)">
+  <body onload="arrange(document.getElementById('slateSpace').clientWidth, document.getElementById('slateSpace').clientHeight)">
     <p class="title">Home</p>
-    <hr size="2px"/>
+    <!--<hr size="2px"/>-->
     
-    <div id="slateSpace" class="slateContainer"></div>
+    <div class="newsticker" id="ticker-box"><ul id="newsArr"></ul></div>
+    <script> 
+      const news = [
+        "This very site was started over Christmas break in 2023 by a random college student who is also a nerd",
+        "If you are seeing this, you are not seeing what is behind it ( ͡° ͜ʖ ͡°)",
+        "The light dims every day, to mourn it's loss is both futile and the most important thing you can do",
+        "Thank you for dialing into continuum1.github.io, please hold while we connect you to our next available goat rental specialist...",
+        ""
+      ];
+
+      ticker = document.getElementById("newsArr");
+
+      for(a = 0; a < news.length; a++) {
+        li = document.createElement("li");
+        text = document.createTextNode(news[a]);
+        li.appendChild(text);
+        ticker.appendChild(li);
+      }
+    </script>
+    <script>startTicker("ticker-box", {speed: 10, delay: 750});</script>
+    
+    <div id="slateSpace" class="slateContainer" width="10px" height="10px"></div>
   </body>
 </html>
