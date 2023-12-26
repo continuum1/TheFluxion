@@ -1,7 +1,8 @@
 const page = "https://continuum1.github.io/TheFluxion/";
 
 async function slateFetcher(slate) {
-    slatesToFetch = await fetch(page + "slates.json");
+    temp = await fetch(page + "slates.json");
+    slatesToFetch = await temp.json();
     console.log(slatesToFetch);
     slates = [];
 
