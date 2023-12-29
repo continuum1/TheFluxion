@@ -36,7 +36,7 @@ p {
 hr {
     margin: 0px;
     padding: 0px;
-    color: var(--pall-3);
+    border-color: var(--pall-3);
 }
 
 .title {
@@ -64,5 +64,33 @@ hr {
     color: var(--pall-1);
 }
 
-.slateContainer {}
+.slateContainer {
+    width: 60%;
+    height: 800px;
+    background-color: var(--pall-4);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.slate {
+    position: absolute;
+    border-top-width: 9px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    top: 200px;
+    left: 5px;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s;
+    animation-timing-function: linear;
+}
+
+.slate:hover {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 

@@ -20,7 +20,6 @@ function hasPoint(pos1, pos2, dim2) {
             pos1[0] <= (pos2[0] + dim2[0]) && 
             pos1[1] <= (pos2[1] + dim2[1]));
 }
-
 function overlap(pos1, pos2, dim1, dim2) {
     if(pos1[0] <= pos2[0] && 
        pos1[1] <= pos2[1] &&
@@ -44,6 +43,22 @@ function overlap(pos1, pos2, dim1, dim2) {
 
     return 0; //case 10
 }
+function fits(slate, position) {
+    return true;
+}
+
+function add(id, slateData, position) {
+    slateSpace = document.getElementById(id);
+
+    slate = document.createElement("iframe");
+    slate.width = slateData.dimensions.w;
+    slate.height = slateData.dimensions.h;
+    slate.position;
+}
+
+function updateViablePositions(currentPositions) {
+
+}
 
 async function arrange(id, width, height) {
     slates = [];
@@ -51,6 +66,19 @@ async function arrange(id, width, height) {
 
     for(p = 0; p < slates.length; p++) {
         console.log(slates[p]);
+    }
+
+    viablePositions = [ [0, 0] ];
+
+    for(p = 0; p < slates.length; p++) {
+        for(c = 0; c < viablePositions.length || c < 0; c++) {
+            if(fits(slates[p], viablePositions[c])) {
+                add(id, slates[p], viablePositions[c]);
+                c = -999;
+            }
+        }
+
+        updateViablePositions(viablePositions);
     }
 
     console.log(width + ", " + height);

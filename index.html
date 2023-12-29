@@ -16,10 +16,10 @@
     <div class="newsticker" id="ticker-box"><ul id="newsArr"></ul></div>
     <script> 
       const news = [
-        "This very site was started over Christmas break in 2023 by a random college student who is also a nerd",
+        "This very site was created over Christmas break in 2023 by a random college student who is also a nerd",
         "If you are seeing this, you are not seeing what is behind it ( ͡° ͜ʖ ͡°)",
-        "The light dims every day, to mourn it's loss is both futile and the most important thing you can do",
-        "Thank you for dialing into continuum1.github.io, please hold while we connect you to our next available goat rental specialist...",
+        "The light dims every day, to mourn it's loss is futile and the most important thing you can do",
+        "Thank you for dialing into continuum1.github.io, please hold while we connect you to our next available goat rental specialist..."
       ];
 
       ticker = document.getElementById("newsArr");
@@ -33,7 +33,16 @@
     </script>
     <script>startTicker("ticker-box", {speed: 7, delay: 750});</script>
     
-    <div id="slateSpace" class="slateContainer" width="10px" height="10px"></div>
+    <div id="slateSpace" class="slateContainer" width="10px" height="10px">
+      <iframe id="temp" draggable="true" src="The_Central_Fluxion/slate.html" class="slate"></iframe>
+      <script>
+        temp = document.getElementById("temp");
+        temp.addEventListener("mouseenter",);
+        temp.addEventListener("mouseleave");
+      </script>
+    </div>
+    <!--
     <script>arrange('slateSpace', document.getElementById('slateSpace').clientWidth, document.getElementById('slateSpace').clientHeight)</script>
+    -->
   </body>
 </html>
