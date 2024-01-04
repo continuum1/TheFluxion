@@ -60,26 +60,16 @@ function updateViablePositions(currentPositions) {
 
 }
 
-async function arrange(id, width, height) {
-    slates = [];
-    slates = await slateFetcher("The_Central_Fluxion");
+async function arrange(id) {
+    width = document.getElementById(id).width;
+    height = document.getElementById(id).height;
 
-    for(p = 0; p < slates.length; p++) {
-        console.log(slates[p]);
-    }
+    slateDocs = [];
+    temp = await fetch(slates.json);
+    slates = await temp.json();
 
-    viablePositions = [ [0, 0] ];
-
-    for(p = 0; p < slates.length; p++) {
-        for(c = 0; c < viablePositions.length || c < 0; c++) {
-            if(fits(slates[p], viablePositions[c])) {
-                add(id, slates[p], viablePositions[c]);
-                c = -999;
-            }
-        }
-
-        updateViablePositions(viablePositions);
-    }
+    slateDocs = slates.slates;
+    console.log(slateDocs);
 
     console.log(width + ", " + height);
     
