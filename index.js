@@ -1,17 +1,8 @@
 const page = "https://continuum1.github.io/TheFluxion/";
 
-async function slateFetcher(slate) {
-    temp = await fetch(page + "slates.json");
-    slatesToFetch = await temp.json();
-    console.log(slatesToFetch);
-    slates = [];
-
-    for(f = 0; f < slatesToFetch.slates.length; f++) {
-        temp = await fetch(page + slatesToFetch.slates[f] + "/slate.json");
-        slates[f] = await temp.json();
-    }
-
-    return slates;
+async function fetchSlate(slate) {
+    temp = await fetch(page + slate + "/slate.json");
+    return await temp.json();
 }
 
 function hasPoint(pos1, pos2, dim2) {
@@ -61,16 +52,16 @@ function updateViablePositions(currentPositions) {
 }
 
 async function arrange(id) {
-    width = document.getElementById(id).width;
-    height = document.getElementById(id).height;
+    temp = document.getElementById(id);
+    width = temp.style.width;
+    height = temp.style.height;
+    console.log(width + ", " + height);
 
     slateDocs = [];
-    temp = await fetch(slates.json);
+    temp = await fetch(page + "slates.json");
     slates = await temp.json();
 
     slateDocs = slates.slates;
     console.log(slateDocs);
-
-    console.log(width + ", " + height);
     
 }

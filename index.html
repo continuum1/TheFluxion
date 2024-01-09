@@ -18,11 +18,20 @@
       const news = [
         "This very site was created over Christmas break in 2023 by a random college student who is also a nerd",
         "If you are seeing this, you are not seeing what is behind it ( ͡° ͜ʖ ͡°)",
-        "The light dims every day, to mourn it's loss is futile and the most important thing you can do",
-        "Thank you for dialing into continuum1.github.io, please hold while we connect you to our next available goat rental specialist..."
+        "The light dims every day, to mourn it's loss is futile... and the most important thing you can do",
+        "Thank you for dialing into continuum1.github.io, please hold while we connect you to our next available goat rental specialist...",
+        "This page has an algorithm that solves a special case of the, NP-hard, bin-packing problem...",
+        "Newsticker NewsTicker NewztickerNewstickTickTickTickNewser NewsTicker TewsNi- NisTewcker TickNewser newsTick ticking the news news news news news tick-",
+        "Mewsticker /ᐠ - ˕ -マ Ⳋ ≽^•⩊•^≼",
+        
       ];
 
       ticker = document.getElementById("newsArr");
+
+      li = document.createElement("li");
+      li.setAttribute("id", "funnyNewstickerItem");
+      li.className = "newsticker-content";
+      ticker.appendChild(li);
 
       for(a = 0; a < news.length; a++) {
         li = document.createElement("li");
@@ -31,8 +40,16 @@
         ticker.appendChild(li);
       }
     </script>
+    <script>
+      async function editContent() { 
+        li = document.getElementById("funnyNewstickerItem");
+        li.textContent = Math.random();
+      }
+
+      setInterval(editContent, 200);
+    </script>
     <script>startTicker("ticker-box", {speed: 7, delay: 750});</script>
-    
+
     <div onLoad="arrange('slateSpace')" id="slateSpace" class="slateContainer">
       <iframe id="temp" draggable="true" src="The_Central_Fluxion/slate.html" class="slate"></iframe>
       <div class="slate-pointer"></div>

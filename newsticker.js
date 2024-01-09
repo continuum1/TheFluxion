@@ -21,6 +21,8 @@ function extend(object1, object2) {
 }
 
 function startTicker(id, param) {
+	var SAFETY_MARGIN = 10;
+
 	var tickerBox = document.getElementById(id);
 	var defaultParam = { speed: 5, delay: 500, rotate: true };
 	var extendedParam = extend(defaultParam, param);
@@ -40,7 +42,7 @@ function startTicker(id, param) {
 		li[li_index].style.left = trans_width + "px";
 		li[li_index].style.display = '';
 		var t = setInterval(function() {
-			if (parseInt(li[li_index].style.left) > -li[li_index].offsetWidth) {
+			if (parseInt(li[li_index].style.left) > -li[li_index].offsetWidth - SAFETY_MARGIN) {
 				li[li_index].style.left = parseInt(li[li_index].style.left) - chunk_width + "px";
 			} else {
 				clearInterval(t);

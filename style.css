@@ -68,7 +68,7 @@ hr {
 
 .slateContainer {
     width: 60%;
-    height: 100vh;
+    height: 80vh;
     background-color: var(--pall-4);
     margin-left: 20%;
     margin-right: 20%;
@@ -87,17 +87,4 @@ hr {
     height: 150px;
     transition: 0.7s;
     animation-timing-function: linear;
-}
-
-
-
-.down-arrow {
-  position: absolute;
-  top: calc(100vh - 60px);
-  left: calc(50% - 14px);
-  width: 0;
-  height: 30px;
-  border: 2px solid;
-  border-radius: 2px;
-  animation: jumpInfinite 1.5s infinite;
 }
