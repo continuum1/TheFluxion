@@ -21,7 +21,7 @@ function extend(object1, object2) {
 }
 
 function startTicker(id, param) {
-	var SAFETY_MARGIN = 10;
+	var SAFETY_MARGIN = 20;
 
 	var tickerBox = document.getElementById(id);
 	var defaultParam = { speed: 5, delay: 500, rotate: true };

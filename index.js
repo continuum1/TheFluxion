@@ -50,20 +50,21 @@ function updateViablePositions(currentPositions) {
 
 async function arrange(id) {
     temp = document.getElementById(id);
-    width = temp.style.width;
-    height = temp.style.height;
+    width = temp.offsetWidth;
+    height = temp.offsetHeight;
     console.log(width + ", " + height);
 
     temp = await fetch(page + "slates.json");
     slates = await temp.json();
 
-    console.log(slates.slates);
+    //console.log(slates.slates);
 
     slateDocs= [slates.slates.length];
-    for(i = 0; i < slateDocs.length; i++) {
+    for(i = 0; i < slates.slates.length; i++) {
         slateDocs[i] = await fetchSlate(slates.slates[i]);
     }
 
     console.log(slateDocs);
-    
+    console.log(slateDocs.length);
+    console.log(slates.slates.length);
 }
