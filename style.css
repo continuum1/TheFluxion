@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    text-align: center;
+    text-align: left;
     margin: 0px;
     padding: 0px;
 }
@@ -33,6 +33,14 @@ body {
 p {
     margin: 0px;
     padding: 0px;
+}
+
+a {
+    color: var(--pall-4);    
+}
+
+a:visited {
+    color: var(--pall-3);
 }
 
 hr {
@@ -55,8 +63,8 @@ hr {
 }
 
 .slate-title {
-    
     position: relative;
+    display: inline;
     font-size: 17px;
     color: var(--pall-1);
     padding: 1px;
@@ -81,24 +89,30 @@ hr {
 }
 
 .slateContainer {
-    width: 60%;
-    height: 80vh;
+    width: 75%;
+    height: 85vh;
     background-color: var(--pall-4);
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top: 5%;
     padding: 0px;
 }
 
 .slate {
     border-top-width: 9px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    margin: 1px;
     top: 90px;
     width: 150px;
     height: 150px;
     transition: 0.7s;
     animation-timing-function: linear;
+}
+
+.up-arrow {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    display: inline-block;
+    border-top: solid 3px;
+    border-left: solid 3px;
 }
