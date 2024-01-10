@@ -54,6 +54,20 @@ hr {
     border-right-style: solid;
 }
 
+.slate-title {
+    
+    position: relative;
+    font-size: 17px;
+    color: var(--pall-1);
+    padding: 1px;
+    height: 17px;
+    width: fit-content;
+    text-align: left;
+    border-right-color: var(--pall-3);
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
 .newsticker {
     border-style: solid;
     border-width: 2px;
