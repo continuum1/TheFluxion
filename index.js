@@ -59,7 +59,7 @@ async function arrange(id) {
 
     //console.log(slates.slates);
 
-    slateDocs= [slates.slates.length];
+    slateDocs = [];
     for(i = 0; i < slates.slates.length; i++) {
         slateDocs[i] = await fetchSlate(slates.slates[i]);
     }
