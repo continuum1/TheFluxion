@@ -50,10 +50,13 @@
     </script>
     <script>startTicker("ticker-box", {speed: 7, delay: 750});</script>
 
-    <div onLoad="arrange('slateSpace')" id="slateSpace" class="slateContainer">
+    <div id="slateSpace" class="slateContainer">
       <iframe id="temp" draggable="true" src="The_Central_Fluxion/slate.html" class="slate"></iframe>
       <div class="slate-pointer"></div>
     </div>
+    <script>
+      arrange('slateSpace');
+    </script>
     
     <!--<script>arrange('slateSpace', document.getElementById('slateSpace').clientWidth, document.getElementById('slateSpace').clientHeight)</script>-->
   </body>

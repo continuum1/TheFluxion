@@ -34,9 +34,6 @@ function overlap(pos1, pos2, dim1, dim2) {
 
     return 0; //case 10
 }
-function fits(slate, position) {
-    return true;
-}
 
 function add(id, slateData, position) {
     slateSpace = document.getElementById(id);
@@ -57,11 +54,16 @@ async function arrange(id) {
     height = temp.style.height;
     console.log(width + ", " + height);
 
-    slateDocs = [];
     temp = await fetch(page + "slates.json");
     slates = await temp.json();
 
-    slateDocs = slates.slates;
+    console.log(slates.slates);
+
+    slateDocs= [slates.slates.length];
+    for(i = 0; i < slateDocs.length; i++) {
+        slateDocs[i] = await fetchSlate(slates.slates[i]);
+    }
+
     console.log(slateDocs);
     
 }
