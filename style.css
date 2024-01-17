@@ -48,27 +48,12 @@ hr {
     padding: 0px;
     border-color: var(--pall-3);
 }
-
 .title {
     position: relative;
     font-size: 35px;
     color: var(--pall-1);
     padding: 1px;
     height: 35px;
-    width: fit-content;
-    text-align: left;
-    border-right-color: var(--pall-3);
-    border-right-width: 2px;
-    border-right-style: solid;
-}
-
-.slate-title {
-    position: relative;
-    display: inline;
-    font-size: 17px;
-    color: var(--pall-1);
-    padding: 1px;
-    height: 17px;
     width: fit-content;
     text-align: left;
     border-right-color: var(--pall-3);
@@ -88,8 +73,34 @@ hr {
     color: var(--pall-1);
 }
 
-.slateContainer {
-    width: 75%;
+.slate {
+    width: 150px;
+    height: 150px;
+    border-bottom-width: 0px;
+}
+
+.slate-title {
+    position: relative;
+    display: inline;
+    font-size: 17px;
+    color: var(--pall-1);
+    padding: 1px;
+    height: 17px;
+    width: fit-content;
+    text-align: left;
+    border-right-color: var(--pall-3);
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+.slate-box {
+    display: inline-block;
+    padding: 2px;
+    border-width: 12px 1px 1px 1px;
+}
+
+.slate-container {
+    width: 76%;
     height: 85vh;
     background-color: var(--pall-4);
     margin-left: 12%;
@@ -98,14 +109,8 @@ hr {
     padding: 0px;
 }
 
-.slate {
-    border-top-width: 9px;
-    margin: 1px;
-    top: 90px;
-    width: 150px;
-    height: 150px;
-    transition: 0.7s;
-    animation-timing-function: linear;
+.virtual-svg {
+    visibility: hidden;
 }
 
 .up-arrow {

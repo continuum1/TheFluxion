@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="100" height="50" style="fill: rgb(216, 216, 216); stroke: rgb(216, 216, 216);"/>
+  <path style="fill: #757575; stroke: #757575;" d="M 0 50 L 7 50 L 7 7 L 0 0 Z"/>
+  <path style="fill: #909090; stroke: 909090;" d="M 100 0 L 100 7 L 7 7 L 0 0 Z"/>
+  <path style="fill: #C02020; stroke: #c02020" d="M 14 16 L 44 46 L 46 44 L 16 14 Z"/>
+  <path style="fill: #C02020; stroke: #C02020" d="M 44 14 L 46 16 L 16 46 L 14 44 Z"/>
+  <path style="fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0);" d="M 55 46 L 90 46 L 90 14 L 55 14  Z"/>
+  <rect x="59" y="21" width="27" height="21" style="fill: rgb(216, 216, 216); stroke: rgb(216, 216, 216);"/>
+</svg>

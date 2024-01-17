@@ -10,10 +10,32 @@
   </head>
   
   <body>
-    
+
+    <div class="virtual-svg">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="1000" height="50" style="fill: #D8D8D8; stroke: #D8D8D8;"/>
+        <path style="fill: #757575; stroke: #757575;" d="M 0 50 L 7 50 L 7 7 L 0 0 Z"/>
+        <path style="fill: #909090; stroke: 909090;" d="M 100 0 L 100 7 L 7 7 L 0 0 Z"/>
+        <path style="fill: #C02020; stroke: #c02020" d="M 14 16 L 44 46 L 46 44 L 16 14 Z"/>
+        <path style="fill: #C02020; stroke: #C02020" d="M 44 14 L 46 16 L 16 46 L 14 44 Z"/>
+        <path style="fill: #000000; stroke: rgb#000000;" d="M 55 46 L 90 46 L 90 14 L 55 14  Z"/>
+        <rect x="59" y="21" width="27" height="21" style="fill: #D8D8D8; stroke: #D8D8D8;"/>
+      </svg>
+    </div>
+
     <p class="title">Home</p>
     
-    <div class="newsticker" id="ticker-box"><ul id="newsArr"></ul></div>
+    <div class="newsticker" id="ticker-box">
+      <ul id="newsArr">
+        <li class="newsticker-content">
+          The code for this newsticker was taken (legally [probably]) from a public site and was written by Vincy (
+          <a href="https://phppot.com/javascript/javascript-news-ticker/">The site</a>
+          <a href="https://www.linkedin.com/in/vincya/?originalSubdomain=in">Their LinkedIn</a>)
+        </li>
+      </ul>
+    </div>
+
     <script> 
       const news = [
         "This very site was created over Christmas break in 2023 by a random college student who is also a nerd",
@@ -40,6 +62,7 @@
         ticker.appendChild(li);
       }
     </script>
+
     <script>
       async function editContent() { 
         li = document.getElementById("funnyNewstickerItem");
@@ -48,11 +71,13 @@
 
       setInterval(editContent, 200);
     </script>
+
     <script>startTicker("ticker-box", {speed: 7, delay: 750});</script>
 
-    <div id="slateSpace" class="slateContainer">
-      <iframe class="slate" src="./The_Central_Fluxion/slate.html"></iframe>
+    <div id="slateSpace" class="slate-container">
+      <div class="slate-box" style="border-width: 17px 2px 2px 2px;"><iframe class="slate" src="./The_Central_Fluxion/slate.html"></iframe></div>
     </div>
+
     <script>
       arrange('slateSpace');
     </script>

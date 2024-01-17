@@ -44,10 +44,6 @@ function add(id, slateData, position) {
     slate.position;
 }
 
-function updateViablePositions(currentPositions) {
-
-}
-
 async function arrange(id) {
     temp = document.getElementById(id);
     width = temp.offsetWidth;
@@ -59,12 +55,17 @@ async function arrange(id) {
 
     //console.log(slates.slates);
 
-    slateDocs = [];
+    slateJsons = [];
     for(i = 0; i < slates.slates.length; i++) {
-        slateDocs[i] = await fetchSlate(slates.slates[i]);
+        slateJsons[i] = await fetchSlate(slates.slates[i]);
     }
 
-    console.log(slateDocs);
-    console.log(slateDocs.length);
-    console.log(slates.slates.length);
+    //console.log(slateDocs);
+    //console.log(slateDocs.length);
+    //console.log(slates.slates.length);
+
+    viablePositions = [[0, 0, width, -1]];
+
+    
+
 }
