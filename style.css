@@ -119,13 +119,5 @@ hr {
 .virtual-svg {
     visibility: hidden;
     display: none;
-}
-
-.up-arrow {
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    display: inline-block;
-    border-top: solid 3px;
-    border-left: solid 3px;
+    clip-path: none;
 }

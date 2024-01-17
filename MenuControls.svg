@@ -5,6 +5,6 @@
     <path style="fill: #909090; stroke: #909090; stroke-width: 0px;" d="M 154 168 L 152 166 L 152 2 L 154 0 Z"/>  <!--right outdent-->
     <path style="fill: #606060; stroke: #606060; stroke-width: 0px;" d="M 154 168 L 152 166 L 2 166 L 0 168 Z"/>  <!--bottom outdent-->
     <path style="stroke: #C02020; stroke-width: 1.75px;" d="M 4 4 L 14 14 M 4 14 L 14 4"/>
-    <path style="fill: #000000; stroke: #000000; stroke-width: 1.5px;" d="M 17 14 L 27 14 L 27 4 L 17 4  Z"/>
-    <rect x="18" y="6" width="8" height="7" style="fill: #D8D8D8; stroke-width: 0px;"/>
+    <path style="fill: #000000; stroke: #000000; stroke-width: 1.5px;" d="M 18 14 L 28 14 L 28 4 L 18 4  Z"/>
+    <rect x="19" y="6" width="8" height="7" style="fill: #D8D8D8; stroke-width: 0px;"/>
 </svg>
