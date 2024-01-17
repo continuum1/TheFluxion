@@ -1,0 +1,10 @@
+<svg viewBox="0 0 154 168" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="154" height="168" style="fill: #D8D8D8; stroke: #D8D8D8;"/>
+    <path style="fill: #757575; stroke: #757575; stroke-width: 0px;" d="M 0 168 L 2 166 L 2 2 L 0 0 Z"/>          <!--left outdent-->
+    <path style="fill: #A0A0A0; stroke: #A0A0A0; stroke-width: 0px;" d="M 154 0 L 152 2 L 2 2 L 0 0 Z"/>          <!--top outdent-->
+    <path style="fill: #909090; stroke: #909090; stroke-width: 0px;" d="M 154 168 L 152 166 L 152 2 L 154 0 Z"/>  <!--right outdent-->
+    <path style="fill: #606060; stroke: #606060; stroke-width: 0px;" d="M 154 168 L 152 166 L 2 166 L 0 168 Z"/>  <!--bottom outdent-->
+    <path style="stroke: #C02020; stroke-width: 1.75px;" d="M 4 4 L 14 14 M 4 14 L 14 4"/>
+    <path style="fill: #000000; stroke: #000000; stroke-width: 1.5px;" d="M 17 14 L 27 14 L 27 4 L 17 4  Z"/>
+    <rect x="18" y="6" width="8" height="7" style="fill: #D8D8D8; stroke-width: 0px;"/>
+</svg>
